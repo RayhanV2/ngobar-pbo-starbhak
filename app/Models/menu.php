@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class manajer extends Model
+class menu extends Model
 {
-    protected $table = "managers";
+    protected $table = "menus";
     protected $guarded= [];
 }
