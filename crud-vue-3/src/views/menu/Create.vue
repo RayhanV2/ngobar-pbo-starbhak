@@ -87,13 +87,13 @@ export default {
                 nama_menu: nama_menu,
                 harga_menu: harga_menu,
                 jenis: jenis,
-                stock: stock,
+                stock: stock
 
             }).then(() => {
 
                 //redirect ke menu index
                 router.push({
-                    name: 'menu.index'
+                    name: 'menu.Index'
                 })
 
             }).catch(error => {

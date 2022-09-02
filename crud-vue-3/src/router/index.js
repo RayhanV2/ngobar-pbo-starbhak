@@ -5,18 +5,18 @@ import { createRouter, createWebHistory } from 'vue-router'
 const routes = [
     {
         path: '/',
-        name: 'post.index',
-        component: () => import( /* webpackChunkName: "post.index" */ '@/views/post/Index.vue')
+        name: 'menu.index',
+        component: () => import( /* webpackChunkName: "menu.index" */ '@/views/menu/Index.vue')
     },
     {
         path: '/create',
-        name: 'post.create',
-        component: () => import( /* webpackChunkName: "post.create" */ '@/views/post/Create.vue')
+        name: 'menu.create',
+        component: () => import( /* webpackChunkName: "menu.create" */ '@/views/menu/Create.vue')
     },
     {
         path: '/edit/:id',
-        name: 'post.edit',
-        component: () => import( /* webpackChunkName: "post.edit" */ '@/views/post/Edit.vue')
+        name: 'menu.edit',
+        component: () => import( /* webpackChunkName: "menu.edit" */ '@/views/menu/Edit.vue')
     }
 ]
 

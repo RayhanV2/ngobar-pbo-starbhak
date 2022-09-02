@@ -21,12 +21,12 @@
                             <tbody>
                                 <tr v-for="(menu, index) in menu" :key="index">
                                     <td>{{ menu.nama_menu }}</td>
-                                    <td>{{ menu.harga-menu }}</td>
+                                    <td>{{ menu.harga_menu }}</td>
                                     <td>{{ menu.jenis }}</td>
                                     <td>{{ menu.stock }}</td>
                                     <td class="text-center">
                                         <router-link :to="{name: 'menu.edit', params:{id: menu.id }}" class="btn btn-sm btn-primary mr-1">EDIT</router-link>
-                                        <button @click.prevent="menuDelete(menu.id)" class="btn btn-sm btn-danger ml-1">DELETE</button>
+                                        <button class="btn btn-sm btn-danger ml-1">DELETE</button>
                                     </td>
                                 </tr>
                             </tbody>
@@ -48,7 +48,7 @@ export default {
     setup() {
 
         //reactive state
-        let menus = ref([])
+        let menu = ref([])
 
         //mounted
         onMounted(() => {
@@ -68,7 +68,7 @@ export default {
 
         //return
         return {
-            menus
+            menu
         }
 
     }

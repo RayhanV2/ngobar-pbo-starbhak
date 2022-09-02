@@ -14,7 +14,7 @@ class MenuController extends Controller
     public function index() 
     {
         //get posts
-        $menu = Menu::latest()->paginate(5);
+        $menu = Menu::latest()->get();
 
         //return collection of posts as a resource
         return new MenuResource(true, 'List Data Menu', $menu);
