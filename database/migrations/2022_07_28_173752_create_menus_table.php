@@ -19,7 +19,6 @@ return new class extends Migration
             $table->string('harga_menu');
             $table->string('jenis');
             $table->integer('stock');
-            $table->string('foto');
 
             $table->timestamps();
         });

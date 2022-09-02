@@ -27,7 +27,6 @@ class MenuController extends Controller
             'harga_menu'   => 'required',
             'jenis'     => 'required',
             'stock'   => 'required',
-            'foto'     => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
         //check if validation fails
@@ -45,7 +44,6 @@ class MenuController extends Controller
             'harga_menu'   => $request->harga_menu,
             'jenis'     => $request->jenis,
             'stock'     => $request->stock,
-            'foto'     => $image->hashName(),
         ]);
 
         //return response
@@ -66,7 +64,6 @@ class MenuController extends Controller
             'harga_menu'   => 'required',
             'jenis'     => 'required',
             'stock'   => 'required',
-            'foto'     => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
         //check if validation fails
@@ -90,7 +87,6 @@ class MenuController extends Controller
                 'harga_menu'   => $request->harga_menu,
                 'jenis'     => $request->jenis,
                 'stock'     => $request->stock,
-                'foto'     => $image->hashName(),
             ]);
 
         } else {

@@ -27,6 +27,6 @@ class Cek_login
             return $next($request);
         }
 
-        return redirect('login')->with('error',"Kamu gak punya lovers yaaa...");
+        return redirect('login')->with('error',"Kamu gak punya akun yaaa...");
     }
 }
